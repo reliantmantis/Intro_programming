@@ -1,0 +1,7 @@
+#Proyect is going to be about selection of materials
+
+#Presentation
+print("Welcome to SelectMaterial, the best webside to find the ideal material for your proyect \nWhats your name?")
+name = input()
+print(f"Nice to meet you, {name} \nThis program is really easy to work with! \nI will be asking you some questions about the properties you would like for your material. At the end I will tell you what is the ideal one for you. I hope my info will be usefull for you :). \nPress Enter to begin")
+
