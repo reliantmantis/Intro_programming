@@ -1,7 +1,23 @@
 #Proyect is going to be about selection of materials
+#Creation of class
+class polymer:
+    def __init__(self, name, density, tensile_strength, melting_point, embodied_energy, price):
+        self.name = name
+        self.density= density
+        self.tensile_strength= tensile_strength
+        self.melting_point= melting_point
+        self.embodied_energy= embodied_energy
+        self.price= price
+pass
+        
 
 #Presentation
-print("Welcome to SelectMaterial, the best webside to find the ideal material for your proyect \nWhats your name?")
+print("Welcome to SelectPolymer, the best webside to find the ideal polymer for your proyect \nWhats your name?")
 name = input()
 print(f"Nice to meet you, {name} \nThis program is really easy to work with! \nI will be asking you some questions about the properties you would like for your material. At the end I will tell you what is the ideal one for you. I hope my info will be usefull for you :). \nPress Enter to begin")
 
+#Questions
+#Density
+print("Let`s beging with a very general property, density. Please intrduce a value using dotes as decimal separation. Rember that the density range for polymers usually goes from 880 kg/cm3 up to 2200 kg/cm3")
+value=input()
+        
