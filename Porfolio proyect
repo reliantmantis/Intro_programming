@@ -1,15 +1,39 @@
 #Proyect is going to be about selection of materials
 #Creation of class
-class polymer:
-    def __init__(self, name, density, tensile_strength, melting_point, embodied_energy, price):
+class Polymer:
+    def __init__(self, name, density, tensile_strength, melting_point, price):
         self.name = name
         self.density= density
         self.tensile_strength= tensile_strength
         self.melting_point= melting_point
-        self.embodied_energy= embodied_energy
         self.price= price
 pass
-        
+
+#Library of materials
+
+#Ranges for density (kg/m3): "low"(895-1330),"medium"(1331-1756),"high"(1757-2200)
+#Ranges for tensile_strength (MPa): "low"(17-50), "medium"(51-84), "high"(85,117)
+#Ranges for melting_point (ºC): "low"(75-180), "medium"(181-265), "high"(266,322)
+#Ranges for price (EUR/Kg): "low"(1-29), "medium"(30-58), "high"(59-87)
+
+a= Polymer("Polyvinylchloride", "medium", "low", "medium", "low")
+b= Polymer("Polyurethane", "low", "low", "low", "low")
+c= Polymer("PTFE", "low", "low", "high", "low")
+d= Polymer("PS", "low", "low", "medium", "low")
+e= Polymer("PP", "low", "low", "low", "low")
+f= Polymer("POM", "medium", "high", "low", "low")
+g= Polymer("PMMA", "low", "medium", "medium", "low")
+h= Polymer("PET", "medium", "medium", "medium", "low")
+i= Polymer("PE", "low", "low", "low", "low")
+j= Polymer("PEEK", "low", "high", "high", "high")
+k= Polymer("UP", "low", "medium", "medium", "low")
+l= Polymer("PC", "low", "medium", "high", "low")
+m= Polymer("PA", "low", "medium", "medium", "low")
+n= Polymer("PF", "low", "medium", "high", "low")
+o= Polymer("Ionomer", "low", "low", "low", "low")
+p= Polymer("Epoxies", "low", "medium", "medium", "low")
+q= Polymer("Celulose Polymer", "low", "low", "medium", "low")
+r= Polymer("ABS", "low", "low", "medium", "low")
 
 #Presentation
 print("Welcome to SelectPolymer, the best webside to find the ideal polymer for your proyect \nWhats your name?")
